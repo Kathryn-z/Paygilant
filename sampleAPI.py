@@ -22,4 +22,5 @@ def is_up():
     return 'Server is up'
 
 if __name__ == '__main__':
+    app.run(host='0.0.0.0',port=8000,debug=True,ssl_context='adhoc')
     serve(app, host='0.0.0.0', port=8000)
