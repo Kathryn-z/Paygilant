@@ -7,11 +7,11 @@ import logging
 logger = logging.getLogger('waitress')
 logger.setLevel(logging.INFO)
 
-@app.route('get', methods=['GET'])
+@app.route('/get', methods=['GET'])
 def testGet():
     return jsonify('message', 'test works')
 
-@app.route('post', methods=['POST'])
+@app.route('/post', methods=['POST'])
 def testPost():
     data = request.json
     print(data)
@@ -22,4 +22,4 @@ def is_up():
     return 'Server is up'
 
 if __name__ == '__main__':
-    serve(app, host='0,0,0,0', port=8080)
+    serve(app, host='0,0,0,0', port=8000)
