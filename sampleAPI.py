@@ -23,4 +23,4 @@ def is_up():
 
 if __name__ == '__main__':
     # app.run(host='0.0.0.0',port=7000,debug=True,ssl_context='adhoc')
-    serve(app, host='0.0.0.0', port=7000)
+    serve(app, host='0.0.0.0', port=7500)
